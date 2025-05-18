@@ -19,3 +19,25 @@ O objetivo deste projeto é desenvolver uma solução de **regressão preditiva*
 - **Python** e bibliotecas como `scikit-learn`, `pandas`, `matplotlib`, entre outras.
 
 ## 🚀 Como executar
+
+### Carregar o Dataset
+
+- Vá para "Data" (Dados) no menu esquerdo.
+- Clique em "Create" > "From local files".
+- Escolha seu arquivo venda_sorvetes.csv.
+- Defina o tipo como Tabular e clique em "Next".
+- Use o delimitador correto (vírgula ,) e confirme as colunas (data, temperatura, venda).
+- Salve o dataset.
+
+
+
+
+
+
+## 🛠️ Publicar e Implantar (opcional)
+
+Se o modelo for satisfatório:
+
+- Registre o modelo no workspace.
+- Crie um serviço de inferência.
+- Gere uma API REST para consumir o modelo com novos dados.
