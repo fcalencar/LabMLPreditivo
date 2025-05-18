@@ -20,19 +20,43 @@ O objetivo deste projeto é desenvolver uma solução de **regressão preditiva*
 
 ## 🚀 Como executar
 
-### Carregar o Dataset
+### 1. Carregar o Dataset
 
-- Vá para "Data" (Dados) no menu esquerdo.
-- Clique em "Create" > "From local files".
-- Escolha seu arquivo venda_sorvetes.csv.
-- Defina o tipo como Tabular e clique em "Next".
-- Use o delimitador correto (vírgula ,) e confirme as colunas (data, temperatura, venda).
-- Salve o dataset.
+1. Vá para "Data" (Dados) no menu esquerdo.
+2. Clique em "Create" > "From local files".
+3. Escolha seu arquivo venda_sorvetes.csv.
+4. Defina o tipo como Tabular e clique em "Next".
+5. Use o delimitador correto (vírgula ,) e confirme as colunas (data, temperatura, venda).
+6. Salve o dataset.
 
+### 2. Criar um Compute Instance
 
+1. No menu esquerdo, clique em **Compute**.
+2. Na aba **Compute Instances**, clique em **+ New**.
+3. Escolha um nome, tipo de máquina (por exemplo: `Standard_DS11_v2`) e clique em **Create**.
+4. Aguarde o status mudar para **Running**.
 
+### 3. Fazer Upload do Notebook
 
+1. Vá para **Notebooks** no menu lateral.
+2. Clique em **+ Upload** e selecione o arquivo `regressao_sorvetes.ipynb`.
+3. Clique com o botão direito no notebook e escolha **Open in Notebook Editor**.
 
+### 4. Executar o Notebook
+
+1. No topo do editor de notebook, selecione o **Compute Instance** criado anteriormente.
+2. Aguarde a conexão com o kernel (ícone verde).
+3. Execute as células uma por uma (Shift + Enter) ou clique em **Run all**.
+
+### 5. (Opcional) Fazer Upload do CSV
+
+Se o arquivo `venda_sorvetes.csv` não estiver no ambiente, você pode:
+
+1. Ir em **Notebooks > Files > Upload** e fazer o upload do `venda_sorvetes.csv`.
+2. Certificar-se de que o caminho do arquivo no notebook esteja correto:
+```python
+df = pd.read_csv('venda_sorvetes.csv')
+```
 
 ## 🛠️ Publicar e Implantar (opcional)
 
